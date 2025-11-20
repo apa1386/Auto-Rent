@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+  --color-midnight: #1E1E1EE5;
+  --color-line: #868686;
+}
+body {
+  overflow-x: hidden;
+  background-color: rgb(128, 146, 128);
+  direction: rtl;
+}
