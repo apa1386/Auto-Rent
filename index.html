@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./node_modules/flowbite/dist/flowbite.min.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./src/style.css" />
 		<title>Auto-Rent.ir</title>
 	</head>
@@ -13,7 +13,7 @@
 		<!--header-->
 		<header></header>
 		<!--main-->
-		<main class="w-full h-fit flex flex-col justify-center items-center">
+		<main class="max-w-300 h-fit mx-auto px-4 flex flex-col justify-center items-center gap-8">
 			<section-1 class="w-full h-fit p-2">
 				<section-1.2></section-1.2>
 			</section-1>
@@ -23,7 +23,7 @@
 			<section-5></section-5>
 			<section-6></section-6>
 			<section-7></section-7>
-			<section-8 class="w-9/10 h-fit flex flex-col justify-center items-center gap-6">
+			<section-8 class="w-full h-fit flex flex-col justify-center items-center gap-6">
 				<!-- top text -->
 				<div class="flex flex-col justify-center items-center gap-2">
 					<p class="text-[#5E5E5E] text-2xl">آنچه مشتریان ما درموردمان گفته‌اند.</p>
@@ -76,7 +76,46 @@
 					</a>
 				</ul>
 			</section-8>
-			<section-9></section-9>
+			<section-9 class="w-full h-fit flex flex-col justify-center items-center gap-6">
+				<!-- top side -->
+				<div class="w-full relative flex flex-col justify-center items-center gap-2">
+					<p class="text-[#5E5E5E] text-2xl">مقالات ما</p>
+					<p class="text-3xl">مجله <span class="text-[#CD9320] text-3xl">خودرو</span></p>
+					<div class="absolute left-0 flex gap-2 justify-center items-center"><span class="text-[#194BF0] lg:text-lg text-center">مشاهده همه </span><img src="./public/img/arrow-left.png" alt="" /></div>
+				</div>
+				<div class="h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-6">
+					<a href="" class="flex flex-col justify-center gap-2 bg-white max-w-sm p-4 border border-[#D7D7D7] rounded-2xl">
+						<img class="rounded-base" src="./public/img/lexus.png" alt="" />
+
+						<h5 class="font-medium text-[#414141]">روش های مختلف برای اجاره خودرو</h5>
+						<p class="text-xs text-justify text-[#757575]"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است.</p>
+						<div class="w-full h-fit flex justify-start items-center gap-4">
+							<div class="w-fit h-fit flex gap-2 text-[#757575] text-sm"><img src="./public/img/clock.png" alt="" class="w-4 h-auto" />3 دقیقه</div>
+							<div class="w-fit h-fit flex gap-2 text-[#757575] text-sm"><img src="./public/img/eye.png" alt="" class="w-4 h-auto" />1,213</div>
+						</div>
+					</a>
+					<a href="" class="flex flex-col justify-center gap-2 bg-white max-w-sm p-4 border border-[#D7D7D7] rounded-2xl">
+						<img class="rounded-base" src="./public/img/chevy.png" alt="" />
+
+						<h5 class="font-medium text-[#414141]">روش های مختلف برای اجاره خودرو</h5>
+						<p class="text-xs text-justify text-[#757575]"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است.</p>
+						<div class="w-full h-fit flex justify-start items-center gap-4">
+							<div class="w-fit h-fit flex gap-2 text-[#757575] text-sm"><img src="./public/img/clock.png" alt="" class="w-4 h-auto" />3 دقیقه</div>
+							<div class="w-fit h-fit flex gap-2 text-[#757575] text-sm"><img src="./public/img/eye.png" alt="" class="w-4 h-auto" />1,213</div>
+						</div>
+					</a>
+					<a href="" class="flex flex-col justify-center gap-2 bg-white max-w-sm p-4 border border-[#D7D7D7] rounded-2xl">
+						<img class="rounded-base" src="./public/img/jeep.png" alt="" />
+
+						<h5 class="font-medium text-[#414141]">روش های مختلف برای اجاره خودرو</h5>
+						<p class="text-xs text-justify text-[#757575]"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است.</p>
+						<div class="w-full h-fit flex justify-start items-center gap-4">
+							<div class="w-fit h-fit flex gap-2 text-[#757575] text-sm"><img src="./public/img/clock.png" alt="" class="w-4 h-auto" />3 دقیقه</div>
+							<div class="w-fit h-fit flex gap-2 text-[#757575] text-sm"><img src="./public/img/eye.png" alt="" class="w-4 h-auto" />1,213</div>
+						</div>
+					</a>
+				</div>
+			</section-9>
 		</main>
 		<!--footer-->
 		<footer></footer>
