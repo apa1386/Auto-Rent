@@ -1,35 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/flowbite/dist/flowbite.min.css"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>Auto-Rent.ir</title>
-  </head>
-  <body>
-    <!--header-->
-    <header></header>
-    <!--main-->
-    <main>
-      <section-1></section-1>
-      <section-1.2></section-1.2>
-      <section-2></section-2>
-      <section-3></section-3>
-      <section-4></section-4>
-      <section-5></section-5>
-      <section-6></section-6>
-      <section-7></section-7>
-      <section-8></section-8>
-      <section-9></section-9>
-    </main>
-    <!--footer-->
-    <footer></footer>
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-  </body>
+<html lang="en" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./node_modules/flowbite/dist/flowbite.min.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<title>Auto-Rent.ir</title>
+	</head>
+	<body class="bg-[#F3F3F3]">
+		<!--header-->
+		<header></header>
+		<!--main-->
+		<main class="w-full h-fit flex flex-col justify-center items-center">
+			<section-1 class="w-full h-fit p-2">
+				<section-1.2></section-1.2>
+			</section-1>
+			<section-2></section-2>
+			<section-3></section-3>
+			<section-4></section-4>
+			<section-5></section-5>
+			<section-6></section-6>
+			<section-7></section-7>
+			<section-8 class="w-9/10 h-fit flex flex-col justify-center items-center gap-6">
+				<!-- top text -->
+				<div class="flex flex-col justify-center items-center gap-2">
+					<p class="text-[#5E5E5E] text-2xl">آنچه مشتریان ما درموردمان گفته‌اند.</p>
+					<p class="text-3xl">نظرات <span class="text-[#CD9320] text-3xl">مشتریان</span></p>
+				</div>
+				<!-- previewed post -->
+				<div class="w-full h-fit rounded-2xl bg-white p-4 flex flex-col gap-6">
+					<div class="flex flex-col justify-center items-center gap-1">
+						<div class="w-30 md:w-34 h-auto rounded-full overflow-hidden border-5 border-[#194BF0]">
+							<img class="w-full h-full" src="./public/img/59e2516b8496f18e7d161c498928d3d1781177a2.jpg" alt="image description" />
+						</div>
+						<span>اولدوز بهاور</span>
+						<div class="w-34 h-6">
+							<img class="w-full h-full" src="./public/img/Frame 427321018.png" alt="image description" />
+						</div>
+					</div>
+					<!-- comments -->
+					<div class="flex flex-col">
+						<span class="text-right md:text-center text-sm text-[#727272]">اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک شرکت با سابقه و مطمئن می‌گشتم!</span>
+						<span class="text-right md:text-center text-sm text-[#727272]">بدون هیچ شکی میگم، اتو رنت تو کار خودش بهترینه!</span>
+						<span class="text-right md:text-center text-sm text-[#727272]">پشتیبانی عالی، هزینه بسیار مناسب، آسان بودن روند اجاره و رزرو؛ هرچی بگم کم گفتم!</span>
+						<span class="text-right md:text-center text-sm text-[#727272]">حتماً دفعه بعد هم برای اجاره ماشین به سراغشون میام.</span>
+					</div>
+				</div>
+				<!-- other reviews -->
+				<ul class="w-full h-fit grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-6">
+					<a active href="#" class="h-fit p-4 flex justify-center items-center gap-4 bg-white border border-[#d7d7d7] rounded-2xl hover:bg-[#ffd46e] active:bg-[#FDB713]">
+						<div class="w-1/4 h-auto rounded-full overflow-hidden">
+							<img class="w-full h-full" src="./public/img/59e2516b8496f18e7d161c498928d3d1781177a2.jpg" alt="image description" />
+						</div>
+						<div class="flex flex-col justify-center items-center gap-2"><span class="text-[#212121] font-medium">اولدوز بهاور</span><span class="text-sm text-[#494949] textwhei">27 دی ماه 1380</span></div>
+					</a>
+					<a href="#" class="h-fit p-4 flex justify-center items-center gap-4 bg-white border border-[#d7d7d7] rounded-2xl hover:bg-[#ffd46e] active:bg-[#FDB713]">
+						<div class="w-1/4 h-auto rounded-full overflow-hidden">
+							<img class="w-full h-full" src="./public/img/mohamad.jpg" alt="image description" />
+						</div>
+						<div class="flex flex-col justify-center items-center gap-2"><span class="text-[#212121] font-medium">محمدجواد امینی</span><span class="text-sm text-[#494949] textwhei">27 دی ماه 1399</span></div>
+					</a>
+					<a href="#" class="h-fit p-4 flex justify-center items-center gap-4 bg-white border border-[#d7d7d7] rounded-2xl hover:bg-[#ffd46e] active:bg-[#FDB713]">
+						<div class="w-1/4 h-auto rounded-full overflow-hidden">
+							<img class="w-full h-full" src="./public/img/is.jpg" alt="image description" />
+						</div>
+						<div class="flex flex-col justify-center items-center gap-2"><span class="text-[#212121] font-medium">فرزانه حیدری</span><span class="text-sm text-[#494949] textwhei">27 دی ماه 1380</span></div>
+					</a>
+					<a href="#" class="h-fit p-4 flex justify-center items-center gap-4 bg-white border border-[#d7d7d7] rounded-2xl hover:bg-[#ffd46e] active:bg-[#FDB713]">
+						<div class="w-1/4 h-auto rounded-full overflow-hidden">
+							<img class="w-full h-full" src="./public/img/the best.jpg" alt="image description" />
+						</div>
+						<div class="flex flex-col justify-center items-center gap-2"><span class="text-[#212121] font-medium">فاطمه ابراهیمی‌فر</span><span class="text-sm text-[#494949] textwhei">27 دی ماه 1380</span></div>
+					</a>
+				</ul>
+			</section-8>
+			<section-9></section-9>
+		</main>
+		<!--footer-->
+		<footer></footer>
+		<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+	</body>
 </html>
