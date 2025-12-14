@@ -19,7 +19,7 @@
 					<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
 				</symbol>
 			</svg>
-			<nav class="bg-white dark:bg-gray-700 rounded-bl-2xl rounded-br-2xl w-8/10 mx-auto sticky top-0 inset-x-0 z-20">
+			<nav class="bg-white dark:bg-gray-700 rounded-bl-2xl rounded-br-2xl w-9/10 mx-auto">
 				<div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
 					<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
 						<img src="./public/logo.svg" class="h-full w-full" alt="Flowbite Logo" />
@@ -106,11 +106,16 @@
 					</div>
 				</div>
 			</div>
+			<button id="scrollToTop" class="fixed bottom-6 right-6 z-50 hidden items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition" aria-label="Scroll to top">
+				<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+				</svg>
+			</button>
 		</header>
 		<!--main-->
-		<main class="max-w-300 h-fit mx-auto px-4 flex flex-col justify-center items-center gap-12">
-			<section-1 class="w-[110%] h-fit px-10 flex justify-start items-center bg-[url('../public/img/image42.png')] bg-center bg-cover bg-no-repeat relative">
-				<div class="w-1/2 lg:w-4/10 my-70 md:mt-50 flex flex-col justify-center items-start gap-12">
+		<main class="">
+			<section-1 id="section-1" class="w-full h-60 md:h-75 lg:h-100 px-10 flex justify-center md:justify-start items-center md:bg-[url('../public/img/image42.png')] bg-cover bg-no-repeat relative">
+				<div class="w-1/2 lg:w-4/10 my-70 md:mt-50 flex flex-col justify-center items-center md:items-start gap-12">
 					<div class="flex flex-col justify-center items-start gap-2">
 						<p class="w-9/10 text-5xl text-[#FDB713] font-bold">اُتـــو رِنت؛ سریع، آسان و به صرفه</p>
 						<p class="text-xl text-[#F9F9F9]"></p>
@@ -157,72 +162,64 @@
 					</div>
 				</section-1.2>
 			</section-1>
-			<section-2 dir="rtl" class="h-360 w-20">
+
+			<section-2 class="h-360 w-20">
 				<!--لوگو ی ماشین-->
-				<div class="grid grid-cols-5 md:grid-cols-5 lg:grid-cols-10 gap-4 md:pl-10 /* فقط تبلت و لپ‌تاپ */ justify-center items-center">
-					<!--لوگو ها-->
-					<div><img class="w-20 h-20" src="./public/BMW.png" alt="" /></div>
-					<div><img class="h-23.3325 w-17.5" src="./public/lexus-logo.png" alt="" /></div>
-					<div><img class="w-20 h-20" src="./public/Marcedes.png" alt="" /></div>
-					<div><img class="h-18.49 w-15" src="./public/Honda.png" alt="" /></div>
-					<div><img class="h-27.48 w-15" src="./public/Hyundai.png" alt="" /></div>
-					<div><img class="h-17.3925 w-15" src="./public/Nissan.png" alt="" /></div>
-					<div><img class="h-21.64 w-15" src="./public/Toyota.png" alt="" /></div>
-					<div><img class="h-25.895 w-12-5" src="./public/KIA.png" alt="" /></div>
-					<div><img class="h-25.895 w-12-5" src="./public/jeep.png" alt="" /></div>
-					<div><img class="h-25.895 w-12-5" src="./public/land-rover.png" alt="" /></div>
+				<div class="grid grid-cols-5 md:grid-cols-5 lg:grid-cols-10 gap-5 place-items-center m-auto w-full">
+					<div><img class="w-20 h-20" src="./public/KIA (5).svg" alt="" /></div>
+					<div><img class="w-15 h-20" src="./public/BMW.svg" alt="" /></div>
+					<div><img class="w-13 h-20" src="./public/Honda.svg" alt="" /></div>
+					<div><img class="w-18 h-20" src="./public/Hyundai.svg" alt="" /></div>
+					<div><img class="w-16 h-20" src="./public/KIA (3).svg" alt="" /></div>
+					<div><img class="w-16 h-20" src="./public/KIA (4).svg" alt="" /></div>
+					<div><img class="w-15 h-20" src="./public/lexus-logo.svg" alt="" /></div>
+					<div><img class="w-15 h-20" src="./public/Marcedes.svg" alt="" /></div>
+					<div><img class="w-14 h-20" src="./public/Nissan.svg" alt="" /></div>
+					<div><img class="w-15 h-20" src="./public/Toyota.svg" alt="" /></div>
 				</div>
 			</section-2>
 			<section-3>
-				<!--چرا اتو رنت-->
-				<div class="w-full m-auto flex justify-center items-center">
-					<div class="bg-amber-500 text-blue-600 p-6 rounded-base flex flex-col items-center gap-2 md:hidden items-center`">
-						<img class="rounded-2xl" src="./public/image 52.png" alt="" />
-						<h2 class="text-xl font-bold text-center">چــــــرا اُتو رِنت؟</h2>
-						<p class="text-base text-center">اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید  از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</p>
+				<div class="w-full m-auto flex justify-center items-center relative mb-32">
+					<div class="bg-gray-900 p-6 rounded-base flex flex-col items-center gap-2 md:hidden items-center`">
+						<img class="rounded-2xl" src="./public/image 52.png" alt="banner-mobile" />
+						<h2 class="text-xl font-bold text-center text-yellow-400">چــــــرا اُتو رِنت؟</h2>
+						<p class="text-base text-center text-white">اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید  از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</p>
 					</div>
 					<div class="relative hidden md:flex w-3/4 items-center justify-center m-3">
-						<img class="rounded-2xl" src="./public/image 52.png" alt="banner" class="w-full h-auto rounded-base object-cover" />
-						<div class="absolute inset-0 flex flex-col items-center justify-center text-amber-500 text-center px-4">
-							<h2 class="text-xl font-bold">چــــــرا اُتو رِنت؟</h2>
-							<p class="text-base">اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</p>
+						<img src="./public/image 52.png" alt="banner-laptop" class="w-full h-auto rounded-2xl object-cover" />
+						<div class="absolute inset-0 flex flex-col items-center justify-center text-amber-500 text-center px-2">
+							<h2 class="text-xl font-bold md:mb-2 lg:mb-9 text-yellow-400">چــــــرا اُتو رِنت؟</h2>
+							<p class="text-base text-white">اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</p>
 						</div>
 					</div>
 				</div>
-				<!-- کارت های ویژگی ها-->
-				<div class="flex justify-center m-5">
-					<div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl place-items-center">
+				<div class="flex justify-center m-5 relative -mt-35 lg:-mt-40 z-10">
+					<div class="grid gap-5 md:gap-2 lg:gap-20 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 max-w-5xl place-items-center">
 						<div>
-							<div class="bg-sky-200 flex flex-col justify-center items-center max-w-sm p-3 m-auto rounded-3xl shadow-xs">
-								<svg class="w-7 h-7 mb-3 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-									<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.875 1.25 3.875 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.155-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z" />
-								</svg>
+							<div class="bg-sky-100 flex flex-col justify-center items-center max-w-[500PX] md:max-w-[200PX] max-h-[150px] p-3 m-auto rounded-3xl shadow-xs">
+								<img class="w-14 h-14" src="./public/icon.svg" alt="icon-0" />
 								<a href="#">
-									<h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">پشتیبانی 24 ساعته</h5>
+									<h5 class="mb-1 text-sm font-bold tracking-tight text-heading">تحویل در محل</h5>
 								</a>
-								<p class="mb-3 text-body text-center">کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</p>
+								<p class="mb-1 text-sm text-center">تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.</p>
 							</div>
 						</div>
 						<div>
-							<div class="bg-sky-200 flex flex-col justify-center items-center max-w-sm p-3 m-auto rounded-3xl shadow-xs">
-								<svg class="w-7 h-7 mb-3 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-									<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.875 1.25 3.875 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.155-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z" />
-								</svg>
+							<div class="bg-sky-100 flex flex-col justify-center items-center max-w-[500PX] md:max-w-[200PX] max-h-[150px] p-3 m-auto rounded-3xl shadow-xs">
+								<img class="w-14 h-14" src="./public/icon (1).svg" alt="icon-1" />
 								<a href="#">
-									<h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">پشتیبانی 24 ساعته</h5>
+									<h5 class="mb-1 text-sm font-bold tracking-tight text-heading">پشتیبانی 24 ساعته</h5>
 								</a>
-								<p class="mb-3 text-body text-center">کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</p>
+								<p class="mb-1 text-sm text-center">کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</p>
 							</div>
 						</div>
 						<div>
-							<div class="bg-sky-200 flex flex-col justify-center items-center max-w-sm p-3 m-auto rounded-3xl shadow-xs">
-								<svg class="w-7 h-7 mb-3 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-									<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.875 1.25 3.875 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.155-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z" />
-								</svg>
+							<div class="bg-sky-100 flex flex-col justify-center items-center max-w-[500PX] md:max-w-[200PX] max-h-[150px] p-3 m-auto rounded-3xl shadow-xs">
+								<img class="w-14 h-14" src="/public/icon (2).svg" alt="icon-2" />
 								<a href="#">
-									<h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">پشتیبانی 24 ساعته</h5>
+									<h5 class="mb-1 text-sm font-bold tracking-tight text-heading">قیمت مناسب</h5>
 								</a>
-								<p class="mb-3 text-body text-center">کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</p>
+								<p class="mb-1 text-sm text-center">هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</p>
 							</div>
 						</div>
 					</div>
@@ -236,26 +233,26 @@
 						<div class="flex gap-4 w-full justify-center">
 							<div class="bg-white rounded-xl overflow-hidden flex-1 max-w-[200px] text-center shadow-sm">
 								<p class="font-bold text-lg mt-3">اسپرت</p>
-								<img src="./public/1.png" alt="اسپرت" class="w-full h-auto" />
+								<img src="./public/5 (4).svg" alt="اسپرت" class="w-full h-auto" />
 								<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 							</div>
 							<div class="bg-white rounded-xl overflow-hidden flex-1 max-w-[200px] text-center shadow-sm">
 								<p class="font-bold text-lg mt-3">شاسی بلند</p>
-								<img src="./public/2.png" alt="شاسی بلند" class="w-full h-auto" />
+								<img src="./public/5 (3).svg" alt="شاسی بلند" class="w-full h-auto" />
 								<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 							</div>
 						</div>
 
 						<!-- ردیف ۲ -->
-						<div class="flex gap-4 w-full justify-center">
+						<div class="flex gap-5 w-full justify-center">
 							<div class="bg-white rounded-xl overflow-hidden flex-1 max-w-[200px] text-center shadow-sm">
 								<p class="font-bold text-lg mt-3">کروک</p>
-								<img src="./public/3.png" alt="کروک" class="w-full h-auto" />
+								<img src="./public/5 (2).svg" alt="کروک" class="w-full h-auto" />
 								<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 							</div>
 							<div class="bg-white rounded-xl overflow-hidden flex-1 max-w-[200px] text-center shadow-sm">
 								<p class="font-bold text-lg mt-3">سدان</p>
-								<img src="./public/4.png" alt="سدان" class="w-full h-auto" />
+								<img src="./public/5 (1).svg" alt="سدان" class="w-full h-auto" />
 								<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 							</div>
 						</div>
@@ -264,37 +261,37 @@
 						<div class="w-full flex justify-center">
 							<div class="bg-white rounded-xl overflow-hidden w-[200px] text-center shadow-sm">
 								<p class="font-bold text-lg mt-3">کوپه</p>
-								<img src="./public/5.png" alt="کوپه" class="w-full h-auto" />
+								<img src="./public/5.svg" alt="کوپه" class="w-full h-auto" />
 								<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 							</div>
 						</div>
 					</div>
 
 					<!-- دسکتاپ -->
-					<div class="hidden md:grid md:grid-cols-5 gap-4 justify-center items-start">
+					<div class="hidden md:grid md:grid-cols-5 gap-5 justify-center items-start">
 						<div class="bg-white rounded-xl overflow-hidden text-center shadow-sm">
 							<p class="text-lg font-bold mt-3">اسپرت</p>
-							<img src="./public/1.png" alt="اسپرت" class="w-full h-auto" />
+							<img src="./public/5 (4).svg" alt="اسپرت" class="w-full h-auto" />
 							<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 						</div>
 						<div class="bg-white rounded-xl overflow-hidden text-center shadow-sm">
 							<p class="text-lg font-bold mt-3">شاسی بلند</p>
-							<img src="./public/2.png" alt="شاسی بلند" class="w-full h-auto" />
+							<img src="./public/5 (3).svg" alt="شاسی بلند" class="w-full h-auto" />
 							<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 						</div>
 						<div class="bg-white rounded-xl overflow-hidden text-center shadow-sm">
 							<p class="text-lg font-bold mt-3">کروک</p>
-							<img src="./public/3.png" alt="کروک" class="w-full h-auto" />
+							<img src="./public/5 (2).svg" alt="کروک" class="w-full h-auto" />
 							<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 						</div>
 						<div class="bg-white rounded-xl overflow-hidden text-center shadow-sm">
 							<p class="text-lg font-bold mt-3">سدان</p>
-							<img src="./public/4.png" alt="سدان" class="w-full h-auto" />
+							<img src="./public/5 (1).svg" alt="سدان" class="w-full h-auto" />
 							<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 						</div>
 						<div class="bg-white rounded-xl overflow-hidden text-center shadow-sm">
 							<p class="text-lg font-bold mt-3">کوپه</p>
-							<img src="./public/5.png" alt="کوپه" class="w-full h-auto" />
+							<img src="./public/5.svg" alt="کوپه" class="w-full h-auto" />
 							<div class="w-3/5 h-1 bg-yellow-400 rounded-tl-2xl rounded-tr-2xl mt-3 mx-auto"></div>
 						</div>
 					</div>
@@ -327,11 +324,11 @@
 								<h2 class="mt-2 mb-2 text-sm font-bold">اجاره تویوتا لندکروز در تهران 2013</h2>
 								<h2 class="mt-2 mb-2 text-sm font-extralight">مدل:2016</h2>
 
-								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 30 روز :8,500,000</span>
 									<span class="text-sm font-bold">روزانه</span>
 								</div>
-								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 12 ماه :10,500,000</span>
 									<span class="text-sm font-bold">ماهانه</span>
 								</div>
@@ -351,11 +348,11 @@
 								<h2 class="mt-2 mb-2 text-sm font-bold">اجاره تویوتا لندکروز در تهران 2013</h2>
 								<h2 class="mt-2 mb-2 text-sm font-extralight">مدل:2016</h2>
 
-								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 30 روز :8,500,000</span>
 									<span class="text-sm font-bold">روزانه</span>
 								</div>
-								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 12 ماه :10,500,000</span>
 									<span class="text-sm font-bold">ماهانه</span>
 								</div>
@@ -375,11 +372,11 @@
 								<h2 class="mt-2 mb-2 text-sm font-bold">اجاره تویوتا لندکروز در تهران 2013</h2>
 								<h2 class="mt-2 mb-2 text-sm font-extralight">مدل:2016</h2>
 
-								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 30 روز :8,500,000</span>
 									<span class="text-sm font-bold">روزانه</span>
 								</div>
-								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 12 ماه :10,500,000</span>
 									<span class="text-sm font-bold">ماهانه</span>
 								</div>
@@ -399,11 +396,11 @@
 								<h2 class="mt-2 mb-2 text-sm font-bold">اجاره تویوتا لندکروز در تهران 2013</h2>
 								<h2 class="mt-2 mb-2 text-sm font-extralight">مدل:2016</h2>
 
-								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 30 روز :8,500,000</span>
 									<span class="text-sm font-bold">روزانه</span>
 								</div>
-								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 12 ماه :10,500,000</span>
 									<span class="text-sm font-bold">ماهانه</span>
 								</div>
@@ -423,11 +420,11 @@
 								<h2 class="mt-2 mb-2 text-sm font-bold">اجاره تویوتا لندکروز در تهران 2013</h2>
 								<h2 class="mt-2 mb-2 text-sm font-extralight">مدل:2016</h2>
 
-								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 30 روز :8,500,000</span>
 									<span class="text-sm font-bold">روزانه</span>
 								</div>
-								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 12 ماه :10,500,000</span>
 									<span class="text-sm font-bold">ماهانه</span>
 								</div>
@@ -447,11 +444,11 @@
 								<h2 class="mt-2 mb-2 text-sm font-bold">اجاره تویوتا لندکروز در تهران 2013</h2>
 								<h2 class="mt-2 mb-2 text-sm font-extralight">مدل:2016</h2>
 
-								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 30 روز :8,500,000</span>
 									<span class="text-sm font-bold">روزانه</span>
 								</div>
-								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-1 rounded-lg">
+								<div class="h-10 m-auto px-4 my-2 flex items-center justify-between bg-gray-200 rounded-lg">
 									<span class="text-sm font-medium">از 1 تا 12 ماه :10,500,000</span>
 									<span class="text-sm font-bold">ماهانه</span>
 								</div>
@@ -466,86 +463,18 @@
 					</div>
 				</div>
 			</section-5>
-			<section-6 class="w-full h-fit flex flex-col justify-center items-center gap-25">
-				<!-- top text -->
-				<div class="flex flex-col justify-center items-center gap-2">
-					<p class="text-[#5E5E5E] text-2xl">چگونه در وبسایت</p>
-					<p class="text-[#CD9320] text-3xl">اُتـــورِنت،<span class="text-[#353535] text-3xl">خودرو رزرو کنیم؟</span></p>
-				</div>
-				<div class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-4 gap-y-8 md:gap-y-4">
-					<div class="flex justify-center items-start">
-						<div class="flex justify-center items-center gap-4">
-							<div class="flex justify-center items-center relative">
-								<img src="./public/img/1.png" alt="" class="absolute -top-[110%] -left-3/12 z-0" />
-								<img src="./public/img/Frame1.png" alt="" class="z-10" />
-							</div>
-							<div class="flex flex-col justify-center items-start gap-2">
-								<p class="text-[#D79C10] text-2xl font-bold">خودروی<span class="text-[#212121] text-2xl"> خود را انتخاب کنید.</span></p>
-								<p class="text-[#5E5E5E] text-base font-medium">خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.</p>
-							</div>
-						</div>
-					</div>
-					<div class="hidden md:block row-span-3">
-						<img src="./public/img/car-how-to-reserve.png" alt="" class="w-full h-full" />
-					</div>
-					<div class="flex justify-center items-start">
-						<div class="flex justify-center items-start">
-							<div class="flex flex-row-reverse justify-center items-center gap-4">
-								<div class="flex justify-center items-center relative">
-									<img src="./public/img/2.png" alt="" class="absolute -top-[110%] -left-2/12 z-0" />
-									<img src="./public/img/Frame2.png" alt="" class="z-10" />
-								</div>
-								<div class="flex flex-col justify-center items-start gap-2">
-									<p class="text-[#D79C10] text-2xl font-bold">تاریخ<span class="text-[#212121] text-2xl"> تحویل را تعیین کنید.</span></p>
-									<p class="text-[#5E5E5E] text-base font-medium">تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="md:row-start-3 flex justify-center items-start">
-						<div class="flex justify-center items-center gap-4">
-							<div class="flex justify-center items-center relative">
-								<img src="./public/img/3.png" alt="" class="absolute -top-full -left-2/12 z-0" />
-								<img src="./public/img/Frame3.png" alt="" class="z-10" />
-							</div>
-							<div class="flex flex-col justify-center items-start gap-2">
-								<p class="text-[#D79C10] text-2xl font-bold">هزینه<span class="text-[#212121] text-2xl"> اجاره را پرداخت کنید.</span></p>
-								<p class="text-[#5E5E5E] text-base font-medium">می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب هزینه اجاره را پرداخت کنید.</p>
-							</div>
-						</div>
-					</div>
-					<div class="md:col-start-3 md:row-start-3 flex justify-center items-start">
-						<div class="flex justify-center items-start">
-							<div class="flex flex-row-reverse justify-center items-center gap-4">
-								<div class="flex justify-center items-center relative">
-									<img src="./public/img/4.png" alt="" class="absolute -top-[110%] -left-2/12 z-0" />
-									<img src="./public/img/Frame4.png" alt="" class="z-10" />
-								</div>
-								<div class="flex flex-col justify-center items-start gap-2">
-									<p class="text-[#D79C10] text-2xl font-bold">خودرو<span class="text-[#212121] text-2xl"> را دریافت کنید.</span></p>
-									<p class="text-[#5E5E5E] text-base font-medium">در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section-6>
-			<section-7>
-				<!-- اکوردین -->
-				<div class="flex justify-center items-center flex-row-reverse gap-6">
-			<section-6></section-6>
 			<section-7>
 				<div class="flex flex-col justify-center items-center gap-2">
 					<p class="text-[#5E5E5E] text-2xl">پر تکرارترین سؤالاتی که پرسیدید</p>
 					<p class="text-[#353535] text-3xl">سؤالات <span class="text-[#CD9320] text-3xl">متداول</span></p>
 				</div>
-				<div class="flex justify-center items-center flex-row-reverse gap-5 m-5">
+				<div class="flex justify-center items-center flex-row-reverse gap-5 lg:w-3/4 md:w-5/6 my-5 m-auto">
 					<div class="hidden md:block">
-						<img class="rounded-4xl md:w-[550px] md:h-130 lg:w-80 lg:h-100" src="./public/Default_A_gentleman_is_showing_a_case_to_a_lady_and_asking_her_0 1.png" alt="aks" />
+						<img class="rounded-4xl md:w-[550px] md:h-130 lg:w-90 lg:h-100" src="./public/Default_A_gentleman_is_showing_a_case_to_a_lady_and_asking_her_0 1.png" alt="aks" />
 					</div>
 					<div id="accordion-open" data-accordion="open" class="rounded-base space-y-2 overflow-hidden w-3/4 m-auto md:m-0">
 						<div class="border-4 rounded-2xl">
-							<h2 id="accordion-open-heading-1 ">
+							<h2 id="accordion-open-heading-1">
 								<button type="button" class="group flex items-center justify-between w-full p-5 font-medium text-body hover:font-bold hover:bg-neutral-secondary-medium" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
 									<span class="flex items-center">
 										<svg class="w-5 h-5 me-2 shrink-0 transition-all group-aria-expanded:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -616,7 +545,71 @@
 					</div>
 				</div>
 			</section-7>
-			<section-8 class="w-full h-fit flex flex-col justify-center items-center gap-6">
+			<section-6 class="w-5/6 m-auto flex flex-col justify-center items-center gap-25">
+				<!-- top text -->
+				<div class="flex flex-col justify-center items-center gap-2">
+					<p class="text-[#5E5E5E] text-2xl">چگونه در وبسایت</p>
+					<p class="text-[#CD9320] text-3xl">اُتـــورِنت،<span class="text-[#353535] text-3xl">خودرو رزرو کنیم؟</span></p>
+				</div>
+				<div class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 gap-4 gap-y-8 md:gap-y-4">
+					<div class="flex justify-center items-start">
+						<div class="flex justify-center items-center gap-4">
+							<div class="flex justify-center items-center relative">
+								<img src="./public/img/1.png" alt="" class="absolute lg:-top-[170%] xl:-top-[110%] md:-top-[190%] -left-3/12 z-0" />
+								<img src="./public/img/Frame1.png" alt="" class="z-10" />
+							</div>
+							<div class="flex flex-col justify-center items-start gap-2">
+								<p class="text-[#D79C10] text-2xl font-bold">خودروی<span class="text-[#212121] text-2xl"> خود را انتخاب کنید.</span></p>
+								<p class="text-[#5E5E5E] text-base font-medium">خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.</p>
+							</div>
+						</div>
+					</div>
+					<div class="hidden md:block row-span-3">
+						<img src="./public/img/car-how-to-reserve.png" alt="" class="w-full h-full" />
+					</div>
+					<div class="flex justify-center items-start">
+						<div class="flex justify-center items-start">
+							<div class="flex flex-row-reverse justify-center items-center gap-4">
+								<div class="flex justify-center items-center relative">
+									<img src="./public/img/2.png" alt="" class="absolute -top-[110%] -left-2/12 z-0" />
+									<img src="./public/img/Frame2.png" alt="" class="z-10" />
+								</div>
+								<div class="flex flex-col justify-center items-start gap-2">
+									<p class="text-[#D79C10] text-2xl font-bold">تاریخ<span class="text-[#212121] text-2xl"> تحویل را تعیین کنید.</span></p>
+									<p class="text-[#5E5E5E] text-base font-medium">تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="md:row-start-3 flex justify-center items-start">
+						<div class="flex justify-center items-center gap-4">
+							<div class="flex justify-center items-center relative">
+								<img src="./public/img/3.png" alt="" class="absolute -top-full -left-2/12 z-0" />
+								<img src="./public/img/Frame3.png" alt="" class="z-10" />
+							</div>
+							<div class="flex flex-col justify-center items-start gap-2">
+								<p class="text-[#D79C10] text-2xl font-bold">هزینه<span class="text-[#212121] text-2xl"> اجاره را پرداخت کنید.</span></p>
+								<p class="text-[#5E5E5E] text-base font-medium">می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب هزینه اجاره را پرداخت کنید.</p>
+							</div>
+						</div>
+					</div>
+					<div class="md:col-start-3 md:row-start-3 flex justify-center items-start">
+						<div class="flex justify-center items-start">
+							<div class="flex flex-row-reverse justify-center items-center gap-4">
+								<div class="flex justify-center items-center relative">
+									<img src="./public/img/4.png" alt="" class="absolute -top-[110%] -left-2/12 z-0" />
+									<img src="./public/img/Frame4.png" alt="" class="z-10" />
+								</div>
+								<div class="flex flex-col justify-center items-start gap-2">
+									<p class="text-[#D79C10] text-2xl font-bold">خودرو<span class="text-[#212121] text-2xl"> را دریافت کنید.</span></p>
+									<p class="text-[#5E5E5E] text-base font-medium">در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section-6>
+			<section-8 class="w-3/4 m-auto h-fit flex flex-col justify-center items-center gap-6">
 				<!-- top text -->
 				<div class="flex flex-col justify-center items-center gap-2">
 					<p class="text-[#5E5E5E] text-2xl">آنچه مشتریان ما درموردمان گفته‌اند.</p>
@@ -711,7 +704,7 @@
 			</section-9>
 		</main>
 		<!--footer-->
-		<footer class="bg-midnight text-gray-300 py-8 rounded-xl w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 shadow-2xl">
+		<footer class="bg-gray-900 text-gray-300 py-8 lg:rounded-xl w-full max-w-7xl mx-auto mt-5 px-4 sm:px-6 lg:px-8 shadow-2xl">
 			<div class="space-y-8">
 				<!-- کارت اطلاعات تماس -->
 				<div class="rounded-2xl p-6 border border-line">
@@ -752,7 +745,7 @@
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
 					<!-- ستون لوگو + متن اتورنت (چپ در دسکتاپ، اول در موبایل) -->
 					<div class="flex flex-col items-start space-y-4 order-1 md:order-1 text-right">
-						<img class="w-32" src="./public/Logo.png" alt="اتورنت" />
+						<img class="w-32" src="./public/LogoF.svg" alt="اتورنت" />
 						<p class="text-sm leading-relaxed text-gray-300 max-w-xs">اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.</p>
 					</div>
 
@@ -783,6 +776,8 @@
 				<div class="text-center text-xs text-gray-400">© تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد</div>
 			</div>
 		</footer>
+
 		<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+		<script src="./script.js"></script>
 	</body>
 </html>

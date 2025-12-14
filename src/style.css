@@ -2,3 +2,8 @@
 @theme {
 	--breakpoint-xs: 30rem;
 }
+#section-1 {
+	background-position: 0 50%;
+	aspect-ratio: 1 / 1;
+}
+
